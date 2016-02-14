@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'objective-extensions_Example', :exclusive => true do
+  pod 'objective-extensions', :path => '../'
+end
+
+target 'objective-extensions_Tests', :exclusive => true do
+  pod 'objective-extensions', :path => '../'
+
+  
+end
