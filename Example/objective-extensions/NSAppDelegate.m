@@ -7,11 +7,29 @@
 //
 
 #import "NSAppDelegate.h"
+#import "objective-extensions.h"
 
 @implementation NSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  NSArray *arr = @["hello", @"world"];
+  [arr forEach:^(NSInteger index, id obj) {
+
+  }];
+
+  NSDictionary *dict = @{@"hello": @"world"};
+  [dict forEachKey:^(id key, id value) {
+
+  }];
+
+  NSObject *obj = [[NSObject alloc] init];
+
+  [obj forEachProperty:^(NSString *key, NSObject *value) {
+
+  }];
+
+  [UIColor colorWithHex:@"FFAAEE"];
     // Override point for customization after application launch.
     return YES;
 }

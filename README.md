@@ -9,7 +9,27 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+```objective-c
+#import "objective-extensions.h"
+
+  NSDictionary *dict = @{@"hello": @"world"};
+  [dict forEachKey:^(id key, id value) {
+
+  }];
+
+  NSObject *obj = [[NSObject alloc] init];
+
+  [obj forEachProperty:^(NSString *key, NSObject *value) {
+
+  }];
+
+
+  UIColor *purple = [UIColor colorWithHex:@"FF00FF"];
+```
+
 ## Requirements
+
+
 
 ## Installation
 
