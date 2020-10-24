@@ -25,10 +25,10 @@ Pod::Spec.new do |s|
                        DESC
 
 
-  s.homepage         = "https://github.com/loofy2/objective-extensions"
+  s.homepage         = "https://github.com/kezzico/objc-ext"
   s.license          = 'MIT'
   s.author           = { "Lee Irvine" => "loofy2@gmail.com" }
-  s.source           = { :git => "https://github.com/loofy2/objective-extensions.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/kezzico/objc-ext.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
